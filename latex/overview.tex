@@ -1,71 +1,185 @@
 \section{Analysis Overview}
-The neutral \Dstar meson produced in the decay of the $\Bm$ is a superposition of particle, anti-particle states and can be expressed as:
-  \begin{equation}
-    \Dstar=\Dstarz+r_Be^{i(\delta_B-\phi_3)}\Dstarzb
-    \label{DstTilde}
-  \end{equation}
-  Here, $r_B=\frac{|A(\Bm\rightarrow \Dstarb\Km)|}{|A(B^{-}\rightarrow \Dstarz\Km)|}$, the ratio of the strong decay amplitudes, and $\delta_B$ is the strong phase difference between them.
-  Writing this in terms of odd and even CP eigenstates, where $D^{*}_{+}=\frac{\Dstarz+\Db^{*0}}{2}$ and $D^{*}_{-}=\frac{\Dstarz-\Db^{*0}}{2}$:
-  \begin{equation}
-    \Dstar=\frac{\Dstarp+\Dstarm}{\sqrt{2}}+r_Be^{i(\delta_B-\phi_3)}\frac{\Dstarp-\Dstarm}{\sqrt{2}}
-    \label{DstTildeCP}
-  \end{equation}
-  The CP eigenvalue of the $\Dstar$ state is given by the product $\lambda_{\Dstar}=\lambda_D\times \lambda_{\piz\text{/}\gamma} \times(-1)^l$. In the case of the strong $\Dstar$ decay via $\piz$ emission, $\lambda_{\piz}=-1$ and $l=1$ therefore $\lambda_{\Dstar}=\lambda_D$ and $\Dstarpm\rightarrow \Dpm\piz$. Where as, for $\gamma$ emission, $\lambda_{\gamma}=+1$ and $l=1$ therefore $\lambda_{\Dstar}=-\lambda_D$ and $\Dstarpm\rightarrow \Dmp\gamma$. This introduces a
-  strong phase shift of $\pi$ between the two neutral $D$ mesons produced in the decay $\Bm\rightarrow D^*\Km$. Defining $\delta=\delta_B$ for the $D^*\rightarrow D\piz$ decay and $\delta=\delta_B+\pi$ for $\Dstarpm\rightarrow D_{\mp}\gamma$, we can write the equivalent of Eq.~\eqref{DstTilde} for the $D$ meson produced in $\Bm$ decay:
-  \begin{equation}
-    D=\Dz+r_Be^{i(\delta-\phi_3)}\Dzb
-    \label{DTilde}
-  \end{equation}
-  This can be translated into an amplitude in Dalitz space,
-  \begin{equation}
-    A_B(m_-^2,m_+^2) \propto A + r_Be^{i\delta-\phi_3}\bar{A}
-    \label{eq:amplitude}
-  \end{equation}
-  where $m_{\pm}^2$ are the invariant masses squared of the $K^0_sh^{\pm}$ combinations. $A=A(m_-^2,m_+^2)$ is the Dalitz amplitude for the $\Dz$ decay and analogously for the $\Dzb$ decay, $\bar{A}=\bar{A}(m_-^2,m_+^2)$. Making the subsitutions $\phi_3\rightarrow -\phi_3$ and $A\leftrightarrow \bar{A}$ gives the equivalent expression for the amplitude of the $D$ meson produced in the charge-conjugated decay, $\Bp\rightarrow D\Kp$. The exent to which CP is violated in
-  $\Dz-\Dzb$ mixing and Cabibbo-favoured \D meson decays is known to be small, therefore, neglecting these second order effects, the conjugate amplitudes can be related by $A_B(m_-^2,m_+^2)=\bar{A}_B(m_+^2,m_-^2)$.
+We are following the discussion of Gershon \etal on $\Bm \to \Dstar h^-$.
+The neutral \Dstar meson produced in the decay of the $\Bm$ is a superposition of particle, anti-particle states.
+  The amplitudes of $\Bm \to \Dstarz h^-$ and $\Bm \to \Dstarzb h^-$ are
+  \begin{eqnarray}
+  A(\Bm \to \Dstarz h^-) = A_c e^{i\delta_c}&,&  A(\Bp \to \Dstarzb h^+) = A_c e^{i\delta_c} \\
+A(\Bm \to \Dstarzb h^-) = A_u e^{i (\delta_u -\gamma)}&,&  A(\Bp \to \Dstarz h^+) = A_u e^{i(\delta_u + \gamma)} 
+  \end{eqnarray}
+ where $\delta_c$ and $\delta_u$ are strong phases, $\gamma$ is the weak phase.  
+%The $\Bm \to \Dstar h^-$ amplitude can then be written as
+ %\begin{eqnarray}
+ %A(\Bm \to \Dstar h^-) = A_c e^{i\delta_c } [ \Dstarz + r_B e^{i (\delta_B -\gamma)} \Dstarzb ]  \\
+ %A(\Bp \to \Dstar h^+) = A_c e^{i\delta_c } [\Dstarzb + r_B e^{i (\delta_B +\gamma)} \Dstarz].
+ %\end{eqnarray} 
+% where we could define
+ % \begin{equation}
+  %  \Dstar =\Dstarz+r_Be^{i(\delta_B-\gamma)}\Dstarzb.
+    %\label{DstTilde}
+  %\end{equation}
+   We define CP eigenstates of the neutral \Dstar as $CP(\Dstarz) = \Dstarzb$, $CP(\Dstarzb) = \Dstarz$, then
+\begin{eqnarray}
+\Dstar_+ = \frac{\Dstarz + \Dstarzb}{\sqrt{2}}&,& \Dstar_- = \frac{\Dstarz - \Dstarzb}{\sqrt{2}} \\
+\Dstarz = \frac{\Dstar_+ + \Dstar_-}{\sqrt{2}}&,& \Dstarzb = \frac{\Dstar_+ - \Dstar_-}{\sqrt{2}} 
+\end{eqnarray}
+%and we have 
+ %\begin{equation}
+  %  \Dstar = \frac{\Dstar_+ + \Dstar_-}{\sqrt{2}} + r_B e^{i (\delta_B -\gamma)} \frac{\Dstar_+ - \Dstar_-}{\sqrt{2}}.
+   % \label{DstTildebar}
+  %\end{equation}  
+  
+  According to Gershon \etal, the CP relationship between \Dstar and \D are $\Dstar_{\pm} \to D_{\mp} \gamma$ and $\Dstar_{\pm} \to D_{\pm} \pi^0$.
+  Thus we have 
+   \begin{eqnarray}
+ A(\Bm \to (D\pi^0) h^-) &=& A_c e^{i\delta_c } A_{D^0 \pi^0} [ \Dz + r_B e^{i (\delta_B -\gamma)} \Dzb ]  \\
+ A(\Bm \to  (D\gamma) h^-) &=& A_c e^{i\delta_c } A_{D^0 \gamma}[\Dz + r_B e^{i (\delta_B +\pi -\gamma)} \Dzb].
+ \end{eqnarray} 
 
-  The Dalitz plot is constructed in 2N bins labelled -N to +N (excluding 0), symmetric about the line $m_-^2\ =  m_+^2$, where N$>0$ corresponds to $m_-^2 > m_+^2$. It can be seen from Eq.~\ref{eq:amplitude} that the square of the amplitude is dependant on the strong phase difference between the \Dz and \Dzb decay:
-    \begin{equation}
+The \D decay amplitudes is defined as $A_D(p) = A_D(m_-^2,m_+^2)e^{i\delta_D(m_-^2, m_+^2)}$.
+Assuming that CPV in \D decays is negligible and ignoring the effects of \D mixing, then $A_D(p) = A_{\bar{D}}(\bar{p})$,
+we have 
+ \begin{eqnarray}
+ A(\Bm, \pi^0, h^-)  &=& A_c e^{i\delta_c } A_{D^0 \pi^0}[ A_D(p) + r_B e^{i (\delta_B -\gamma)} A_D(\bar{p}) ]  \\ 
+A(\Bm, \gamma, h^-)  &=& A_c e^{i\delta_c } A_{D^0 \gamma} [A_D(p) + r_B e^{i (\delta_B +\pi -\gamma)} A_D(\bar{p})],
+ \end{eqnarray} 
+where we label the amplitude of $A(\Bm \to (K_S^0 h^+ h^-)_D h^0 h^-)$ in short as $A(\Bm, h^0, h^-)$.
+The number of events in each Dalitz bin are then
+ \begin{eqnarray}
+ N_i(\Bm, \pi^0, h^-)  &=&  h_{\pi^0}\int  [ |A_D(p)|^2 + |r_B A_D(\bar{p})|^2  + 2r_B Re(A_D(p)A_D^*(\bar{p})e^{-i(\delta_B - \gamma)}) ] dp \\ 
+N_i(\Bm, \gamma, h^-)  &=&h_{\gamma}\int  [|A_D(p)|^2 + |r_B A_D(\bar{p})|^2 - 2r_B Re(A_D(p)A_D^*(\bar{p})e^{-i(\delta_B - \gamma)}) ] dp
+ \end{eqnarray} 
+ where $h_{\pi^0}/h_{\gamma} = \BR(D^{*0} \to D^0 \pi^0)/\BR(D^{*0} \to D^0 \gamma)$.
+The last term can be expressed as
+\begin{equation}
+Re[A_D(p)A_D^*(\bar{p})e^{-i(\delta_B - \gamma)}] = |A_D(p)A_D(\bar{p})| [\cos(\delta_D)\cos(\delta_B -\gamma) + \sin(\delta_D)\sin(\delta_B -\gamma) ]
+\end{equation}
+with
+  \begin{equation}
       \Delta\delta_D \equiv \delta_D(m_+^2,m_-^2) - \delta_D(m_-^2,m_+^2)
     \end{equation}
-    where $\delta_D(m_+^2,m_-^2) \equiv$ arg$A$ - arg$\bar{A}$ is the phase of $A(m_+^2,m_-^2)$. The equation for the cosine of the average strong phase difference, weighted by the decay rate, within each bin $i$ of area $\mathcal{D}_i$, is given by:
-    \begin{equation}
-      c_i \equiv \frac{\int_{\mathcal{D}_i} ( | A | | \bar{A} | \cos{\delta_D}) d\mathcal{D}}{\sqrt{\int_{\mathcal{D}_i} | A |^2 d\mathcal{D}} {\sqrt{\int_{\mathcal{D}_i} | \bar{A} |^2 d\mathcal{D}}}}
-    \end{equation}
-An analogous expression can be constructed for the sine of the weighted strong phase difference within bin $i$, $s_i$. Both parameters have been measured by the CLEO-c experiment, who observed \Dz\Dzb pairs produced at the $\psi(3770)$ resonance. One \D meson is reconstructed in \KS$h^+h^-$ or \KL$h^+h^-$ final state, and the other in a decay to \KS$h^+h^-$ or a CP eigenstate. Combining the efficiency-corrected events yields in each bin with flavour-tagged information
-allows $s_i$ and $c_i$ to
-be determined, where their finite precision introduces a systematic uncertainty into the final result. The benefit of this method is that it avoids making assumptions about the nature
-    of the intermediate resonances contributing to the \KS$h^+h^-$ final state, which are required in the model-dependant approach when fitting an amplitude model to flavour-tagged \Dz decays, in which an assumed functional form for $|A|$, $|\bar{A}|$ and $\delta_D$ are constructed.
 
-\begin{center}
-  *** Insert paragraph describing choice of binning scheme ***
-\end{center}
-The CP observables that are measured in this analysis are defined as:
+The Dalitz plot is constructed in 2n bins labelled -n to +n (excluding 0), symmetric about the line $m_-^2\ =  m_+^2$, where N$>0$ corresponds to $m_-^2 > m_+^2$.
+One then define 
+\begin{eqnarray}
+c_i &=& \frac{\int_i |A_D(p)A_D(\bar{p})|\cos(\delta_D)dp}{\sqrt{\int_i A^2_D(p)dp \int_i A^2_{\bar{D}}(p)dp}}\\
+s_i  &=&  \frac{\int_i |A_D(p)A_D(\bar{p})|\sin(\delta_D)dp}{\sqrt{\int_i A^2_D(p)dp \int_i A^2_{\bar{D}}(p)dp}}\\
+K_i &=& \int _i |A_D(p)|^2 dp, K_{\bar{i}} = \int _i |A_{\bar{D}}(p)|^2 dp
+\end{eqnarray}
+These variables are related by $c_i = c_{\bar{i}} = c_{-i}$, $s_i = -s_{\bar{i}} = -s_{-i}$ and $K_{-i} = K_{\bar{i}}$.
+To assure proper normalization, we define 
 \begin{equation}
-  x_{\pm} \equiv r_B\cos{(\delta \pm \phi_3)} \text{ and } y_{\pm} \equiv r_B\sin{(\delta \pm \phi_3)}
+F_i = \frac{K_i}{\sum_i K_i}
 \end{equation}
-and from these parameters, it is possible to extract $r_B$, $\delta_B$ and $\phi_3$. As described in Sec.~\ref{sec:introduction}, $\delta=\delta_B$ and $\delta=\delta_B+\pi$ for $\Dstarz\rightarrow \D \piz$ and $\Dstar\rightarrow \D \gamma$, respectively. The extra strong phase difference of $\pi$ introduced by the latter decay simply results in a negative sign in front of $x_{\pm}$ and $y_{\pm}$, therefore does not provide any extra information.
 
-Selections placed on the data in order to extract signal events result in nonuniformities within the Dalitz phase space, and the associated effect on each position in relation to the others must be accounted for. This is achieved by constructing a relative selection and reconstruction efficiency profile as a function of Dalitz plot position, $\epsilon=\epsilon(m_-^2,m_+^2)$. The fraction of events in bin $i$ is therefore given by:
+We then have 
+\begin{eqnarray}
+ N_i(\Bm, \pi^0, h^-)  &=&  h_{\pi^0}( F_i + r^2_BF_{\bar{i}}  + 2\sqrt{F_iF_{\bar{i}}} (x_-c_i + y_-s_i ) )  \\
+N_i(\Bm, \gamma, h^-)  &=& h_{\gamma}( F_i + r^2_BF_{\bar{i}}  - 2\sqrt{F_iF_{\bar{i}}} (x_-c_i + y_-s_i ) )
+ \end{eqnarray} 
+with $x_{\pm} = r_B \cos(\delta_B \pm \gamma)$ and $y_{\pm} = r_B \sin(\delta_B \pm \gamma)$.
+$h_{\pi^0}$ and $h_{\gamma}$ is redefind to absorb $\sum_i K_i$ inside and $h_{\pi^0}/h_{\gamma} = \BR(D^{*0} \to D^0 \pi^0)/\BR(D^{*0} \to D^0 \gamma)$.
+
+Taking into account efficiency affects, the above definition become
+\begin{eqnarray}
+c'_i &=& \frac{\int_i \epsilon(p) |A_D(p)A_D(\bar{p})|\cos(\delta_D)dp}{\sqrt{\int_i \epsilon(p) A^2_D(p)dp \int_i  \epsilon(p) A^2_{\bar{D}}(p)dp}}\\
+s'_i  &=&  \frac{\int_i  \epsilon(p) |A_D(p)A_D(\bar{p})|\sin(\delta_D)dp}{\sqrt{\int_i \epsilon(p)  A^2_D(p)dp \int_i \epsilon(p) A^2_{\bar{D}}(p)dp}}\\
+K'_i &=& \int _i \epsilon(p) |A_D(p)|^2 dp
+\end{eqnarray}
+In this case, the normalization requirement becomes
 \begin{equation}
-  F_i=\frac{\int_{\mathcal{D}_i}|A|^2\epsilon d\mathcal{D}}{\sum_j\int_{\mathcal{D}_j}|A|^2\epsilon d\mathcal{D}}
+F'_i = \frac{K'_i}{\sum_i K'_i}
 \end{equation}
-Denoting the number of events in positive (negative) bins due to \Bp decays as $N_{+i}^+$ ($N_{-i}^+$), and for \Bm decays $N_{+i}^-$ ($N_{-i}^-$), and considering Eq.~\ref{eq:amplitude}, it then follows that
+\begin{eqnarray}
+ N_i(\Bm, \pi^0, h^-)  &=&  h'_{\pi^0}( F'_i(\pi^0) + r^2_BF'_{\bar{i}}(\pi^0)  + 2\sqrt{F'_i(\pi^0)F'_{\bar{i}}(\pi^0)} (x_-c'_i(\pi^0) + y_-s'_i(\pi^0) ) )  \\
+N_i(\Bm, \gamma, h^-)  &=& h'_{\gamma}( F'_i(\gamma) + r^2_BF'_{\bar{i}}(\gamma)  - 2\sqrt{F'_i(\gamma)F'_{\bar{i}}(\gamma)} (x_-c'_i(\gamma) + y_-s'_i(\gamma) ) )
+ \end{eqnarray} 
+and we have 
 \begin{equation}
-\begin{aligned}
-  N_{\pm i}^+ = h_{B^+}\left[ F_{\mp i} + (x_+^2+y_+^2)F_{\pm i} + 2\sqrt{F_iF_{-i}}(x_+c_{\pm i}-y_+s_{\pm i})\right]
-  \\
-  N_{\pm i}^- = h_{B^-}\left[ F_{\pm i} + (x_-^2+y_-^2)F_{\mp i} + 2\sqrt{F_iF_{-i}}(x_-c_{\pm i}+y_-s_{\pm i})\right]
-\end{aligned}
+\frac{h'_{\pi^0}}{h'_{\gamma}} = \frac{\BR(D^{*0} \to D^0 \pi^0) \epsilon_{\textrm{ave}}(\pi^0)}{\BR(D^{*0} \to D^0 \gamma) \epsilon_{\textrm{ave}}(\gamma)}
 \end{equation}
-where $h_{B^{\pm}}$ accounts for the relative normalisation of $B^+$ and $B^-$ decays that arise from asymmetries in the production rates of bottom and anti-bottom mesons.
+where the average efficiency for the decay is defined as
+\begin{equation}
+\epsilon_{\textrm{ave}} = \frac{\int \epsilon(p) |A_D(p)|^2 dp}{ \int  |A_D(p)|^2 dp}
+\end{equation} 
 
-%bar over mu
-The decay $\BorBbar\rightarrow\Dstarpm\mu_{\mp}\nu_{\mu} X$, where $\Dstarpm\to\DorDbar^0\pi^{\pm}$ and $\DorDbar^0\to\KS h^+h^-$ ($X$ denotes other particles that could be produced in the \BorBbar decay), is used as a control mode to determine $F_i$. Comparions are made between simulated $\BorBbar\rightarrow\Dstarpm\mu_{\mp}\nu_{\mu} X$ and \Bpm\to\Dstar\Kpm decays in order to correct for differences in their reconstruction and selection efficiencies. Decays of the higher statistics mode,
-\Bpm\to\Dstar\pipm, are also studied in order to develop the signal selection procedure and determine the yield of \Bpm\to\Dstar\pipm miss-identified as \Bpm\to\Dstar\Kpm candidates.
+In our analysis, we have the following categories:
+\begin{itemize}
+\item $\Bm \to (K_S^0 \pi^+ \pi^-)_D \pi^0 \pi^-$
+\item $\Bm \to (K_S^0 \pi^+ \pi^-)_D \pi^0 K^-$
+\item $\Bm \to (K_S^0 \pi^+ \pi^-)_D \gamma \pi^-$
+\item $\Bm \to (K_S^0 \pi^+ \pi^-)_D \gamma K^-$
+\item $\Bm \to (K_S^0 \pi^+ \pi^-)_D (\pi^0 \to \gamma) \pi^-$
+\item $\Bm \to (K_S^0 \pi^+ \pi^-)_D (\pi^0 \to \gamma) K^-$
+\item $\Bp \to (K_S^0 \pi^+ \pi^-)_D \pi^0 \pi^+$
+\item $\Bp \to (K_S^0 \pi^+ \pi^-)_D \pi^0 K^+$
+\item $\Bp \to (K_S^0 \pi^+ \pi^-)_D \gamma \pi^+$
+\item $\Bp \to (K_S^0 \pi^+ \pi^-)_D \gamma K^+$
+\item $\Bp \to (K_S^0 \pi^+ \pi^-)_D (\pi^0 \to \gamma) \pi^+$
+\item $\Bp \to (K_S^0 \pi^+ \pi^-)_D (\pi^0 \to \gamma) K^+$
+\end{itemize}
+and the corresponding $K_S^0 K^+ K^-$ modes.
+Those with $\pi^0 \to \gamma$ represent the  modes where only one $\gamma$ of the $\pi0$ decay is reconstructed and used for $B^-$ reconstruction.
 
-The effect of \Dz-\Dzb mixing was neglected in the CLEO-c measurements of $c_i$ and $s_i$, as it is in the current analysis. This introduces a bias of 0.2\degrees in the derived measurement of $\phi_3$. The CP violating effect in \KS decays was also not considered, and is expected to introduce $\mathcal{O}(1\degrees)$ uncertainty to the final result. An uncertainty of similar magnitude enters due to the different interaction cross sections of the \Kz and \Kzb mesons. The
-results of these neglected effects are negligible in the current analysis, considering the expected precision of the $\phi_3$ measurement that can be obtained.
-\begin{center}
-  *** Insert paragraph describing ANA note layout ***
-\end{center}
+The observed number of events in each Dalitz bin $i$ and in each modes are expressed as
+\begin{eqnarray}
+N_i(\Bm, \pi^0, K)  &=&  h'(\Bm, \pi^0, K) [ F'_i  + r^2_B(K)F'_{\bar{i}}   + 2\sqrt{F'_i F'_{\bar{i}} } (x_-(K)c_i  + y_-(K)s_i ) ]  \\\nonumber
+N_i(\Bm, \gamma, K)  &=& h'(\Bm, \pi^0, K)[ F'_i  + r^2_B(K)F'_{\bar{i}}  - 2\sqrt{F'_i F'_{\bar{i}} } (x_-(K)c_i + y_-(K)s_i  ) ] \\\nonumber
+N_i(\Bm, \pi^0 \to \gamma, K)  &=& h'(\Bm, \pi^0 \to \gamma, K)[ F'_i  + r^2_B(K)F'_{\bar{i}}  + 2\sqrt{F'_i F'_{\bar{i}} } (x_-(K)c_i + y_-(K)s_i  ) ] \\\nonumber
+N_i(\Bm, \pi^0, \pi)  &=&  h'(\Bm, \pi^0, \pi)[ F'_i  + r^2_B(\pi)F'_{\bar{i}}   + 2\sqrt{F'_i F'_{\bar{i}} } (x_-(\pi)c_i  + y_-(\pi)s_i ) ] \\\nonumber
+N_i(\Bm, \gamma, \pi)  &=& h'(\Bm, \pi^0, \pi)[ F'_i  + r^2_B(\pi)F'_{\bar{i}}  - 2\sqrt{F'_i F'_{\bar{i}} } (x_-(\pi)c_i + y_-(\pi)s_i  ) ] \\\nonumber
+N_i(\Bm, \pi^0 \to \gamma, \pi)  &=& h'(\Bm, \pi^0 \to \gamma, \pi)[ F'_i  + r^2_B(\pi)F'_{\bar{i}}  + 2\sqrt{F'_i F'_{\bar{i}} } (x_-(\pi)c_i + y_-(\pi)s_i  ) ] \\\nonumber 
+N_i(\Bp, \pi^0, K)  &=&  h'(\Bp, \pi^0, K)[ F'_{\bar{i}}  + r^2_B(K)F'_{i}   + 2\sqrt{F'_i F'_{\bar{i}} } (x_+(K)c_i  - y_+(K)s_i ) ]  \\\nonumber
+N_i(\Bp, \gamma, K)  &=& h'(\Bp, \pi^0, K)[ F'_{\bar{i}}  + r^2_B(K)F'_i  - 2\sqrt{F'_i F'_{\bar{i}} } (x_+(K)c_i - y_+(K)s_i  ) ] \\\nonumber
+N_i(\Bp, \pi^0 \to \gamma, K)  &=& h'(\Bp, \pi^0 \to \gamma, K)[ F'_{\bar{i}}  + r^2_B(K)F'_i  + 2\sqrt{F'_i F'_{\bar{i}} } (x_+(K)c_i - y_+(K)s_i  ) ] \\\nonumber
+N_i(\Bp, \pi^0, \pi)  &=&  h'(\Bp, \pi^0, \pi)[ F'_{\bar{i}}  + r^2_B(\pi)F'_i   + 2\sqrt{F'_i F'_{\bar{i}} } (x_+(\pi)c_i  - y_+(\pi)s_i ) ]  \\\nonumber
+N_i(\Bp, \gamma, \pi)  &=& h'(\Bp, \pi^0, \pi)[ F'_{\bar{i}}  + r^2_B(\pi)F'_i  - 2\sqrt{F'_i F'_{\bar{i}} } (x_+(\pi)c_i - y_+(\pi)s_i  ) ] \\\nonumber
+N_i(\Bp, \pi^0 \to \gamma, \pi)  &=& h'(\Bp, \pi^0 \to \gamma, \pi)[ F'_{\bar{i}}  + r^2_B(\pi)F'_i  + 2\sqrt{F'_i F'_{\bar{i}} } (x_+(\pi)c_i - y_+(\pi)s_i  ) ] \\\nonumber 
+ \end{eqnarray} 
+ We make the following assumptions to simply the analysis when considering the dependence of $F'_i$, $c'_i$ and $s'_i$ with efficiency
+\begin{itemize}
+\item $c'_i$ and $s'_i$ are more robust under efficiency variance and we consider them to be the same for all the modes (will be checked using MC).
+\item We use directly $c_i$ and $s_i$ from CLEO-c and the effects due to different efficiency map will be considered in systematics.
+\item $F'_i$ are assumed to be the same for $\Bm$ and $\Bp$ modes (trivial assumption). 
+\item $F'_i$ are assumed to be the same for $K$ and $\pi$ modes (will be checked using MC). 
+\item $F'_i$ are assumed to be the same for $\pi^0$, $\gamma$ and $\pi^0 \to \gamma$ modes (a little non-trivial, need to be checked by MC, if not, need to think about reasons).
+\end{itemize}
+
+The normalization factors are related by
+\begin{eqnarray}
+\frac{h'(B, \pi^0, h)}{h'(B, \gamma, h)} &=&\frac{\BR(D^{*0} \to D^0 \pi^0) \epsilon_{\textrm{ave}}(B, \pi^0, h)}{\BR(D^{*0} \to D^0 \gamma) \epsilon_{\textrm{ave}}(B, \gamma, h)} \\
+\frac{h'(B, \pi^0, h)}{h'(B, \pi^0 \to \gamma, h)} &=&\frac{ \epsilon_{\textrm{ave}}(B, \pi^0, h)}{ \epsilon_{\textrm{ave}}(B, \pi^0 \to \gamma, h)} \\
+\frac{h'(B, h^0, K)}{h'(B, h^0, \pi)} &=&\frac{\BR(B^- \to D^{*0} K^-) \epsilon_{\textrm{ave}}(B, h^0, h)}{\BR(B^- \to D^{*0} \pi^-) \epsilon_{\textrm{ave}}(B, h^0, \pi)} \\
+\end{eqnarray}
+We can further replace $h'$ by the total number of events observed in each mode
+\begin{eqnarray}
+h'(\Bm, \pi^0, K) &=& \frac{N(\Bm, \pi^0, K)}{1+r_B^2(K) + 2(c x_-(K) +  s y_-(K))}\\\nonumber 
+h'(\Bm, \pi^0 \to \gamma, K) &=& \frac{N(\Bm, \pi^0 \to \gamma, K)}{1+r_B^2(K) + 2(c x_-(K) +  s y_-(K))}\\\nonumber 
+h'(\Bm, \gamma, K) &=& \frac{N(\Bm, \gamma, K)}{1+r_B^2(K) - 2(c x_-(K) +  s y_-(K))}\\\nonumber 
+h'(\Bm, \pi^0, \pi) &=& \frac{N(\Bm, \pi^0, \pi)}{1+r_B^2(\pi) + 2(c x_-(\pi) +  s y_-(\pi))}\\\nonumber 
+h'(\Bm, \pi^0 \to \gamma, \pi) &=& \frac{N(\Bm, \pi^0 \to \gamma, \pi)}{1+r_B^2(\pi) + 2(c x_-(\pi) +  s y_-(\pi))}\\\nonumber 
+h'(\Bm, \gamma, \pi) &=& \frac{N(\Bm, \gamma, \pi)}{1+r_B^2(\pi) - 2(c x_-(\pi) +  s y_-(\pi))}\\\nonumber 
+h'(\Bp, \pi^0, K) &=& \frac{N(\Bp, \pi^0, K)}{1+r_B^2(K) + 2(c x_+(K) -  s y_+(K))}\\\nonumber 
+h'(\Bp, \pi^0 \to \gamma, K) &=& \frac{N(\Bp, \pi^0 \to \gamma, K)}{1+r_B^2(K) + 2(c x_+(K) -  s y_+(K))}\\\nonumber 
+h'(\Bp, \gamma, K) &=& \frac{N(\Bp, \gamma, K)}{1+r_B^2(K) - 2(c x_+(K) -  s y_+(K))}\\\nonumber 
+h'(\Bp, \pi^0, \pi) &=& \frac{N(\Bp, \pi^0, \pi)}{1+r_B^2(\pi) + 2(c x_+(\pi) -  s y_+(\pi))}\\\nonumber 
+h'(\Bp, \pi^0 \to \gamma, \pi) &=& \frac{N(\Bp, \pi^0 \to \gamma, \pi)}{1+r_B^2(\pi) + 2(c x_+(\pi) -  s y_+(\pi))}\\\nonumber 
+h'(\Bp, \gamma, \pi) &=& \frac{N(\Bp, \gamma, \pi)}{1+r_B^2(\pi) - 2(c x_+(\pi) -  s y_+(\pi))}\\\nonumber 
+\end{eqnarray}
+\begin{eqnarray}
+c &=& \sum_i \sqrt{ F'_i F'_{\bar{i}}} c_i  \\
+s &=& \sum_i \sqrt{ F'_i  F'_{\bar{i}}} s_i \\
+\end{eqnarray}
+
+The above relations for $h'$ are not yet set inside code and can be used to bring more information to the fit.
+One could further consider the relationship of $h'$ between $K_S^0 \pi^+ \pi^-$ and $K_S^0 K^+ K^-$ modes (it may not help in add sensitivity, not sure if it will help in stabilizing the fit )
+\begin{equation}
+\frac{h'(K_S^0 \pi^+ \pi^-)}{h'(K_S^0 K^+ K^-)} = \frac{\BR(D^0 \to K_S^0 \pi^+\pi^-)\epsilon_{\textrm{ave}}(D^0 \to K_S^0 \pi^+ \pi^-)}{\BR(D^0 \to K_S^0 K^+K^-)\epsilon_{\textrm{ave}}(D^0 \to K_S^0 K^+ K^-)}
+\end{equation}
+
+
+The above relationship is valid for the decay $\Bm \to \Dstar \pi^-$ and $\Bm \to \Dstar K^-$. 
+The procedure we try to take is to fit $\Bm \to \Dstar \pi^-$ and $\Bm \to \Dstar K^-$ modes together according to the above relationship without any assumptions on the CP violation effects on $\Bm \to \Dstar \pi^-$.
+In fact, for each Dalitz bin, we have four measurements, $N(\Bm, h^0, \pi^-)$, $N(\Bp, h^0, \pi^+)$, $N(\Bm, h^0, K^-)$ and $N(\Bp, h^0, K^+)$, that is $4n$ where $n$ is the number of bins in the upper region of Dalitz plot.
+while the four equations give us $2n + 12$ unknowns, $F'_i$, $F'_{\bar{i}}$, $x_{\pm}(\pi)$, $x_{\pm}(K)$, $y_{\pm}(\pi)$, $y_{\pm}(K)$, $h'(\Bm, h^0, \pi^-)$, $h'(\Bm, h^0, K^-)$, $h'(\Bp, h^0, \pi^+)$ and $h'(\Bp, h^0, K^+)$.
+Even if we don't take into account the relationship between $h'$, when $n > 6$, we have more observables than unknown and thus $\gamma$ can be constrained.
+ The lower region of Dalitz plot will add more statistical power ($4n$ new observables) without introducing any unknowns.
